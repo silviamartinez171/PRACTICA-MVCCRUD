@@ -1,0 +1,84 @@
+﻿@model MVCCRUD.Models.Notaest
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Notaest</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Carnet)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Carnet)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Apellidos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Apellidos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombres)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nombres)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IPN)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IPN)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IIPN)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IIPN)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SIST)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SIST)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PROYEC)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PROYEC)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NF)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NF)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EXCI)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EXCI)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NFCI)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NFCI)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IIC)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IIC)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

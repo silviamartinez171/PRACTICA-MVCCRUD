@@ -1,0 +1,83 @@
+﻿@model MVCCRUD.Models.Notaest
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Notaest</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Carnet" class="control-label"></label>
+                <input asp-for="Carnet" class="form-control" />
+                <span asp-validation-for="Carnet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Apellidos" class="control-label"></label>
+                <input asp-for="Apellidos" class="form-control" />
+                <span asp-validation-for="Apellidos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nombres" class="control-label"></label>
+                <input asp-for="Nombres" class="form-control" />
+                <span asp-validation-for="Nombres" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IPN" class="control-label"></label>
+                <input asp-for="IPN" class="form-control" />
+                <span asp-validation-for="IPN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IIPN" class="control-label"></label>
+                <input asp-for="IIPN" class="form-control" />
+                <span asp-validation-for="IIPN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SIST" class="control-label"></label>
+                <input asp-for="SIST" class="form-control" />
+                <span asp-validation-for="SIST" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PROYEC" class="control-label"></label>
+                <input asp-for="PROYEC" class="form-control" />
+                <span asp-validation-for="PROYEC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NF" class="control-label"></label>
+                <input asp-for="NF" class="form-control" />
+                <span asp-validation-for="NF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EXCI" class="control-label"></label>
+                <input asp-for="EXCI" class="form-control" />
+                <span asp-validation-for="EXCI" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NFCI" class="control-label"></label>
+                <input asp-for="NFCI" class="form-control" />
+                <span asp-validation-for="NFCI" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IIC" class="control-label"></label>
+                <input asp-for="IIC" class="form-control" />
+                <span asp-validation-for="IIC" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
